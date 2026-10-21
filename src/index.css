@@ -31,7 +31,7 @@ body {
     font-family: var(--font-family);
     font-size: 15px;
     /* سایز فونت متن اصلی */
-    background-color: var(--slate-300);
+    background-color: var(--color-primary);
     min-height: 100vh;
     display: flex;
     justify-content: center;
