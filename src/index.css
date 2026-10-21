@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap');
+
+:root {
+    /* Colors */
+    --color-primary: hsl(47, 88%, 63%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray-500: hsl(0, 0%, 42%);
+    --color-gray-950: hsl(0, 0%, 7%);
+
+    /* Typography */
+    --font-family: 'Figtree', sans-serif;
+    --font-weight-medium: 500;
+    --font-weight-extra-bold: 800;
+    --font-size-body: 16px;
+
+    /* Layout & Spacing */
+    --border-radius-card: 20px;
+    --border-radius-badge: 4px;
+    --shadow-box: 8px 8px 0px var(--color-gray-950);
+    --transition-fast: 0.2s ease-in-out;
+}
+
+/* استایل‌های پایه و ریست عمومی */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 15px;
+    /* سایز فونت متن اصلی */
+    background-color: var(--slate-300);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
