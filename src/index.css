@@ -12,10 +12,12 @@
     --font-weight-medium: 500;
     --font-weight-extra-bold: 800;
     --font-size-body: 16px;
+    --font-size-title: 24px;
 
     /* Layout & Spacing */
     --border-radius-card: 20px;
     --border-radius-badge: 4px;
+    --border-radius-img: 10px;
     --shadow-box: 8px 8px 0px var(--color-gray-950);
     --transition-fast: 0.2s ease-in-out;
 }
@@ -29,7 +31,7 @@
 
 body {
     font-family: var(--font-family);
-    font-size: 15px;
+    font-size: 1rem;
     /* سایز فونت متن اصلی */
     background-color: var(--color-primary);
     min-height: 100vh;
