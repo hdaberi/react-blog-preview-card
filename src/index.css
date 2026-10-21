@@ -35,8 +35,5 @@ body {
     /* سایز فونت متن اصلی */
     background-color: var(--color-primary);
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    
 }

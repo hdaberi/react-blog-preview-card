@@ -36,7 +36,7 @@ function CardBody() {
   return (
     <div className="card-body">
       <h1 className="card-body__title">HTML & CSS foundations</h1>
-      <p className="edcription">
+      <p className="decription">
         These languages are the backbone of every website, defining structure,
         content, and presentation.
       </p>

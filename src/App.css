@@ -1,3 +1,11 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 100dvh;
+}
+
 .blog-card {
     display: flex;
     flex-direction: column;
@@ -6,36 +14,38 @@
     padding: 1.5rem;
     background-color: var(--color-white);
     border-radius: var(--border-radius-card);
-    max-width: 384px;
     border: 1px solid var(--color-gray-950);
     box-shadow: var(--shadow-box);
+    max-width: 384px;
+    width: 100%;
 }
 
 .blog-card .card-header {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+
     gap: 1rem;
 }
 
 .blog-card .card-header .blog-card__img {
-    border-radius: var(--border-radius-img);
-    height: 200px;
     object-fit: contain;
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-img);
 
 }
 
 .blog-card .card-header .card-header_info .card-tags {
     list-style: none;
+}
 
-    li {
-        font-weight: var(--font-weight-extra-bold);
-        padding: 0.5rem .75rem;
-        background-color: var(--color-primary);
-        width: fit-content;
-        border-radius: var(--border-radius-badge);
-        margin-bottom: .75rem;
-    }
+.blog-card .card-tags li {
+    font-weight: var(--font-weight-extra-bold);
+    padding: 0.5rem .75rem;
+    background-color: var(--color-primary);
+    width: fit-content;
+    border-radius: var(--border-radius-badge);
+    margin-bottom: .75rem;
 }
 
 .blog-card .card-body {
@@ -46,20 +56,34 @@
 
 .blog-card .card-body__title {
     font-size: var(--font-size-title);
+    cursor: pointer;
+    transition: var(--transition-fast);
 }
 
-.blog-card .edcription {
+.blog-card .card-body__title:hover,
+.blog-card .card-body__title:active,
+.blog-card .card-body__title:focus {
+    color: var(--color-primary);
+}
+
+.blog-card .decription {
     color: var(--color-gray-500);
 }
-.publisher-info{
+
+.publisher-info {
     display: flex;
     align-items: center;
     gap: .75rem;
 }
-.publisher-info .avatar-img{
+
+.publisher-info .avatar-img {
     width: 32px;
-    height: auto;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* اگر آواتار دایره‌ای است */
 }
-.publisher-info .publisher-userName{
+
+.publisher-info .publisher-userName {
     font-weight: var(--font-weight-extra-bold);
 }
